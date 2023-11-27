@@ -1,0 +1,102 @@
+.staff-form {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  padding: 1rem;
+  background-color: #00000075;
+  border-radius: 8px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+.staff-layout {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  width: 450px;
+  margin: auto;
+  position: relative;
+  top: 45px;
+}
+.staff-form h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.info-staff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 1rem;
+}
+.info-staff .input_staff {
+  padding: 0.75rem;
+}
+.info-staff .input_staff input {
+  width: 350px;
+  height: 30px;
+}
+.info-staff .input_staff p {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.info-staff button {
+  padding: 8px;
+  margin-top: 1rem;
+  border-radius: 8px;
+
+  & a {
+    text-decoration: none;
+    font-size: 1rem;
+  }
+}
+/* ------------------------------------------------- */
+
+.table{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  background-color: #0000007c;
+  opacity: 0.8;
+  display: none;
+}
+.table button{
+  position: absolute;
+  top: 200px;
+  right: 350px;
+  cursor: pointer;
+  border: none;
+  padding: 8px;
+}
+.table-staff{
+  max-width: 950px;
+  margin: auto;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+.table-staff caption{
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.table-staff table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 12rem;
+}
+.table-staff table th,td{
+  padding: 0.75rem;
+  text-align: center;
+}
+

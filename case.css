@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.bars{
+    display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+.header-link {
+  display: flex;
+  gap: 2rem;
+}
+.header-link li {
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-link li:hover,
+.header-link li.active {
+  background-color: green;
+}
+.header-input input {
+  padding: 0.5rem;
+}
+section {
+  margin: 20px;
+  letter-spacing: 0.3px;
+  line-height: 1.75;
+
+  & button {
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px;
+  }
+}
+.features {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background-color: #00000062;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: Slace 0.2s ease-in;
+  opacity: 1;
+}
+.icon {
+  position: absolute;
+  top: 110px;
+  left: 1250px;
+  cursor: pointer;
+}
+.info-features {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.features-form {
+  width: 1000px;
+  height: 50vh;
+  background-color: #f2f2f2;
+}
+.features.input {
+  margin: auto;
+}
+.input-flied {
+  margin: 10px;
+  padding: 5px;
+
+  & input {
+    width: 900px;
+    height: 45px;
+  }
+  & p {
+    font-size: 20px;
+  }
+}
+.btn-features {
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px;
+
+  & button {
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+  }
+
+  & input {
+    margin-left: 20px;
+  }
+}
+.btn-features_end {
+  width: 900px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & button {
+    background-color: red;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+}
+@keyframes Slace {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (width < 900px) {
+    .header-link{
+        display: none;
+    }
+    .bars{
+        display: block;
+        color: #fff;
+        margin: auto;
+    }
+}

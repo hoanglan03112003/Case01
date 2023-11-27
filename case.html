@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bai1.css">
+    <link rel="stylesheet" href="case.css">
+</head>
+
+<body>
+    <header>
+        <div class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header-link">
+            <li id="demo" class="active">Trang chủ</li>
+            <li id="demo">Giới thiệu</li>
+            <li id="demo">Bài viết</li>
+            <li id="demo">Liên lạc</li>
+        </div>
+        <div class="header-input">
+            <input type="text" placeholder="Tìm kiếm">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </header>
+    <section>
+        <h1>Ví dụ thao tác Javasrcipt với HTML,CSS</h1>
+        <p>Nội dung đang cập nhập...</p>
+        <button class="demo2" id="demo3">Đăng nhập</button>
+        <button class="md1" id="md2">Add staff</button>
+        <button onclick="ReviewStaff()" id="ReView">Review the staff you just added</button>
+    </section>
+    <main>
+        <div class="features" id="showlogin">
+            <div class="info-features">
+                <div class="features-imgae">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/005/545/335/small/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg"
+                        alt="">
+                </div>
+                <div class="features-form">
+                    <div class="features-input">
+                        <div class="input-flied">
+                            <p for="">Username</p>
+                            <input id="username" type="text" placeholder="Enter User" required>
+                        </div>
+                        <div class="input-flied">
+                            <p for="">Password</p>
+                            <input id="password" type="password" placeholder="Enter Password" required>
+                        </div>
+                    </div>
+                    <div class="btn-features">
+                        <button id="test5">Login</button>
+                        <input type="checkbox">
+                        <label for="text">Remember Me</label>
+                    </div>
+                    <div class="btn-features_end">
+                        <button id="test2">Close</button>
+                        <p>Forgot<a href="#">Password?</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon" id="test3">
+                <i class="fa-solid fa-x"></i>
+            </div>
+        </div>
+    </main>
+    <main class="container">
+        <div class="staff-form" id="Show-staff_form">
+            <div class="staff-layout">
+                <h1>More company employees</h1>
+                <div class="info-staff">
+                    <div class="input_staff">
+                        <p for="FullNameStaff">Employee FullName</p>
+                        <input type="text" id="FullNameStaff">
+                    </div>
+                    <div class="input_staff">
+                        <p for="BaseSalary">Employee BaseSalary</p>
+                        <input type="number" id="BaseSalary">
+                    </div>
+                    <div class="input_staff">
+                        <p for="ProductSalary">Employee ProductSalary</p>
+                        <input type="number" id="ProductSalary">
+                    </div>
+                    <div class="input_staff">
+                        <p for="ProductQuantity">Employee ProductQuantity</p>
+                        <input type="number" id="ProductQuantity">
+                    </div>
+                    <div>
+                        <button id="input-staff" onclick="addEmployee()"><a href="#">Confirm</a></button>
+                        <button id="close-staff"><a href="#">Close</a></button>
+                    </div>
+                    <button onclick="OutPutList()" id="Output-staff"><a href="#">Export the list of added employees</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="container">
+        <div class="table" id="table-form_list">
+            <div class="table-staff">
+                <table id="EmployeeTable" border="1">
+                    <caption>The list of Employee</caption>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>BaseSalary</th>
+                        <th>ProductSalary</th>
+                        <th>TotalSalary</th>
+                    </tr>
+                </table>
+            </div>
+            <button onclick="CloseList()" id="close-staff_list"><i class="fa-solid fa-x"></i></button>
+        </div>
+    </main>
+    <script src="bai1.js"></script>
+    <script src="case.js"></script>
+</body>
+
+</html>
