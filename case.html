@@ -91,10 +91,10 @@
                         <input type="number" id="ProductQuantity">
                     </div>
                     <div>
-                        <button id="input-staff" onclick="addEmployee()"><a href="#">Confirm</a></button>
-                        <button id="close-staff"><a href="#">Close</a></button>
+                        <button id="input-staff" onclick="addEmployee()">Confirm</button>
+                        <button id="close-staff">Close</button>
                     </div>
-                    <button onclick="OutPutList()" id="Output-staff"><a href="#">Export the list of added employees</a></button>
+                    <button onclick="OutPutList()" id="Output-staff">Export the list of added employees</button>
                 </div>
             </div>
         </div>
@@ -104,16 +104,18 @@
             <div class="table-staff">
                 <table id="EmployeeTable" border="1">
                     <caption>The list of Employee</caption>
-                    <tr>
+                    <tr onclick="editemployee(this)">
                         <th>ID</th>
                         <th>Name</th>
                         <th>BaseSalary</th>
                         <th>ProductSalary</th>
-                        <th>TotalSalary</th>
+                        <th>ProductQuantity</th>
+                        <th>Total</th>
+                        <th>chinhsua</th>
                     </tr>
                 </table>
             </div>
-            <button onclick="CloseList()" id="close-staff_list"><i class="fa-solid fa-x"></i></button>
+            <button class="Btn" onclick="CloseList()" id="close-staff_list"><i class="fa-solid fa-x"></i></button>
         </div>
     </main>
     <script src="case1.js"></script>

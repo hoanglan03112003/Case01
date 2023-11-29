@@ -33,7 +33,7 @@
   margin-top: 1rem;
 }
 .info-staff .input_staff {
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .info-staff .input_staff input {
   width: 350px;
@@ -45,14 +45,9 @@
   font-weight: 500;
 }
 .info-staff button {
-  padding: 10px;
+  padding: 0.75rem 2rem;
   margin-top: 1rem;
-  border-radius: 8px;
-
-  & a {
-    text-decoration: none;
-    font-size: 1rem;
-  }
+  cursor: pointer;
 }
 /* ------------------------------------------------- */
 
@@ -67,13 +62,13 @@
   opacity: 0.8;
   display: none;
 }
-.table button{
+.table .Btn{
   position: absolute;
   top: 200px;
   right: 350px;
   cursor: pointer;
   border: none;
-  padding: 8px;
+  padding: 1rem 2rem;
 }
 .table-staff{
   max-width: 950px;
